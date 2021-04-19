@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-endpoint-exporter
+  profiles:
+    active: test
+
+server:
+  port: 9000
+
+
+
+eureka:
+  server:
+    prod: http://139.159.217.102:9100/
+    test: http://172.16.0.11:9100/
