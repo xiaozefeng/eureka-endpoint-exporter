@@ -39,7 +39,7 @@ public class IndexController {
     private Cache<String, List<InstanceDTO>> cache;
 
     @SneakyThrows
-    @GetMapping("{appid}")
+    @GetMapping("/search{appid}")
     public Object getApp(@PathVariable String appid) {
         // cache for all name
         List<String> names = new ArrayList<>();
